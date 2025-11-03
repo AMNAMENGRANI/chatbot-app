@@ -57,9 +57,9 @@ if (window.location.pathname === "/index.html" || window.location.pathname === "
   });
 } else if (window.location.pathname === "/user.html") {
   document.getElementById('user-btn')?.addEventListener('click', ()=>{
-    window.location.href = 'chat.html';
+    window.location.href = 'cht.html';
   });
-} else if (window.location.pathname === "/chat.html") {
+} else if (window.location.pathname === "/cht.html") {
   document.getElementById('logout')?.addEventListener('click', ()=>{
     signOut(auth)
       .then(()=>{
@@ -70,4 +70,5 @@ if (window.location.pathname === "/index.html" || window.location.pathname === "
         alert(error.message);
       });
   });
+
 }
